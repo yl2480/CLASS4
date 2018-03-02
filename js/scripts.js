@@ -1,4 +1,6 @@
-var map = L.map('map').setView([40.730808,-73.997442],10);
+var map = L.map('map', {
+  scrollWheelZoom: false
+}).setView([40.730808,-73.997442],10);
 
 L.tileLayer('https://a.basemaps.cartocdn.com/rastertiles/dark_all/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
